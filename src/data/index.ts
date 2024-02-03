@@ -1,4 +1,5 @@
-import { IProduct } from "../interfaces/interfaces";
+import { IFormInput, IProduct } from "../interfaces/interfaces";
+
 
 
 export const ProductList:IProduct[] = [
@@ -109,5 +110,33 @@ export const ProductList:IProduct[] = [
       name: "cars",
       imageURL: "https://edgecast-img.yahoo.net/mysterio/api/AAF2337E5A659931DE25CBFE268CE27FFE187DE39FC7548C2445BB6F27B5F73E/autoblog/resizefill_w660_h372;quality_80;format_webp;cc_31536000;/https://s.aolcdn.com/os/ab/_cms/2023/02/06044004/lamborgnini_invencible_002.jpg"
     }
+  },
+]
+
+
+export const formInputsList:IFormInput[] = [
+  {
+    id: 'title',
+    name: 'title',
+    label: 'product title',
+    type: 'text'
+  },
+  {
+    id: 'description',
+    name: 'description',
+    label: 'product description',
+    type: 'text'
+  },
+  {
+    id: 'imageURL',
+    name: 'imageURL',
+    label: 'product image URL',
+    type: 'text'
+  },
+  {
+    id: 'price',
+    name: 'price',
+    label: 'product price',
+    type: 'number'
   },
 ]
