@@ -9,7 +9,7 @@ export const ProductList:IProduct[] = [
     description: "aaaaaaaaaaaa aaaaaaaaaaa aaaaaaaaaaaaaaa aaaaaaa aaaaaaaaaaa aaaaaa  aaaaaaaaa aaaaa aaaa aaaaaaaaa",
     imageURL:"https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNhcnN8ZW58MHx8MHx8fDA%3D",
     price: "500.000",
-    colors:["#be123c","#15803d","#0369a1"],
+    colors:["#be123c","#15803d","#0369a1" , "#000000"],
     category:{
       name: "cars",
       imageURL: "https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNhcnN8ZW58MHx8MHx8fDA%3D"
@@ -137,6 +137,6 @@ export const formInputsList:IFormInput[] = [
     id: 'price',
     name: 'price',
     label: 'product price',
-    type: 'number'
+    type: 'text'
   },
 ]

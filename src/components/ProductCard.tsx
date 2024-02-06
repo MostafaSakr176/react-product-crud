@@ -11,10 +11,9 @@ const ProductCard = ({product}:IProps) => {
 
   const {title , price , imageURL , colors , category , description } = product;
 
-
   return (
 
-    <article className="overflow-hidden rounded-md shadow transition hover:shadow-lg ">
+  <article className="overflow-hidden rounded-md shadow transition hover:shadow-lg ">
   <Image
     alt="Office"
     url={imageURL}
@@ -28,25 +27,23 @@ const ProductCard = ({product}:IProps) => {
       <h3 className="mt-0.5 text-lg text-gray-900">{title}</h3>
 
     <p className="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
-    {txtSlicer(description)}
+      {txtSlicer(description)}
     </p>
 
     <div className="flex mt-3 items-center space-x-1">
-    <span className={`w-5 h-5 rounded-full bg-red-600`} ></span>
-    <span className={`w-5 h-5 rounded-full bg-green-600`} ></span>
-    <span className={`w-5 h-5 rounded-full bg-blue-600`} ></span>
-       </div>
+      {colors.map(ele => <span className={'w-5 h-5 rounded-full'} style={{backgroundColor: ele}} key={ele}></span>)}
+    </div>
 
-       <div className="flex items-center justify-between mt-2">
-         <span>{price} $</span>
-         <Image url={category.imageURL}
-           alt="product 1" className="w-10 h-10 rounded-full object-center" />
-       </div>
+      <div className="flex items-center justify-between mt-2">
+        <span>{price} $</span>
+        <Image url={category.imageURL}
+          alt="product 1" className="w-10 h-10 rounded-full object-center" />
+      </div>
 
-       <div className="flex items-center justify-between space-x-2 mt-4">
-         <Button className="bg-indigo-600 flex-1">edit</Button>
-         <Button className="bg-red-600 flex-1">delete</Button>
-       </div>
+      <div className="flex items-center justify-between space-x-2 mt-4">
+        <Button className="bg-indigo-600 flex-1">edit</Button>
+        <Button className="bg-red-600 flex-1">delete</Button>
+      </div>
   </div>
 </article>
 
