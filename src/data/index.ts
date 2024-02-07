@@ -1,116 +1,45 @@
-import { IFormInput, IProduct } from "../interfaces/interfaces";
+import { ICategory, IFormInput, IProduct } from "../interfaces/interfaces";
+import { uId } from "../utils/functions";
 
 
 
 export const ProductList:IProduct[] = [
   {
-    id: 1,
+    id: uId() ,
     title: "aaaaaaaaaaaaaaa",
-    description: "aaaaaaaaaaaa aaaaaaaaaaa aaaaaaaaaaaaaaa aaaaaaa aaaaaaaaaaa aaaaaa  aaaaaaaaa aaaaa aaaa aaaaaaaaa",
-    imageURL:"https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNhcnN8ZW58MHx8MHx8fDA%3D",
+    description: "Mercedes-AMG G 63 Grand Edition Launched In India At Rs 4 Crore",
+    imageURL:"https://media.zigcdn.com/media/content/2023/Sep/cover_651417aa1554c.jpg",
     price: "500.000",
-    colors:["#be123c","#15803d","#0369a1" , "#000000"],
+    colors:[  "#3C2A21","#6C4AB6","#000000",],
     category:{
-      name: "cars",
-      imageURL: "https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNhcnN8ZW58MHx8MHx8fDA%3D"
+      name: "mercedes",
+    imageURL: "https://a.allegroimg.com/s512/11fe7f/14071f1e46ce83c20aa1868310d6/Naklejka-na-samochod-auto-szybe-lakier-tuning-mercedes-benz-logo-15cm" 
     }
   },
   {
-    id: 2,
+    id: uId() ,
     title: "bbbbbbbbbbbb",
-    description: "bbbbb bbbbb bbbbbbbbbbbb bbb bbbb bbb  bbb bb bbbb bbbbbbbbbb",
+    description: "bbbbb bbbbb bbbbbbbbbbbb bbb bbbb",
     imageURL:"https://img.freepik.com/free-photo/sports-car-driving-asphalt-road-night-generative-ai_188544-8052.jpg",
     price: "500.000",
-    colors:["#be123c","#15803d","#0369a1"],
+    colors:[  "#3C2A21","#6C4AB6","#000000",],
     category:{
-      name: "cars",
-      imageURL: "https://img.freepik.com/free-photo/sports-car-driving-asphalt-road-night-generative-ai_188544-8052.jpg"
+      name: "BMW",
+    imageURL: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/BMW.svg/1200px-BMW.svg.png" 
     }
   },
   {
-    id: 3,
+    id: uId() ,
     title: "cccccccccc cccccccccc",
-    description: "ccccccccc ccccccc ccccc ccccc cccc cccccccc  ccccccccc ccccccccc ccccc ccccc",
+    description: "ccccccccc ccccccc ccccc ccccc",
     imageURL:"https://edgecast-img.yahoo.net/mysterio/api/AAF2337E5A659931DE25CBFE268CE27FFE187DE39FC7548C2445BB6F27B5F73E/autoblog/resizefill_w660_h372;quality_80;format_webp;cc_31536000;/https://s.aolcdn.com/os/ab/_cms/2023/02/06044004/lamborgnini_invencible_002.jpg",
     price: "500.000",
-    colors:["#be123c","#15803d","#0369a1"],
+    colors:[ "#3C2A21","#6C4AB6","#000000",],
     category:{
-      name: "cars",
-      imageURL: "https://edgecast-img.yahoo.net/mysterio/api/AAF2337E5A659931DE25CBFE268CE27FFE187DE39FC7548C2445BB6F27B5F73E/autoblog/resizefill_w660_h372;quality_80;format_webp;cc_31536000;/https://s.aolcdn.com/os/ab/_cms/2023/02/06044004/lamborgnini_invencible_002.jpg"
+      name: "volkswagen",
+    imageURL: "https://upload.wikimedia.org/wikipedia/commons/6/6d/Volkswagen_logo_2019.svg" 
     }
-  },
-  {
-    id: 4,
-    title: "aaaaaaaaaaaaaaa",
-    description: "aaaaaaaaaaaa aaaaaaaaaaa aaaaaaaaaaaaaaa aaaaaaa aaaaaaaaaaa aaaaaa  aaaaaaaaa aaaaa aaaa aaaaaaaaa",
-    imageURL:"https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNhcnN8ZW58MHx8MHx8fDA%3D",
-    price: "500.000",
-    colors:["#be123c","#15803d","#0369a1"],
-    category:{
-      name: "cars",
-      imageURL: "https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNhcnN8ZW58MHx8MHx8fDA%3D"
-    }
-  },
-  {
-    id: 5,
-    title: "bbbbbbbbbbbb",
-    description: "bbbbb bbbbb bbbbbbbbbbbb bbb bbbb bbb  bbb bb bbbb bbbbbbbbbb",
-    imageURL:"https://img.freepik.com/free-photo/sports-car-driving-asphalt-road-night-generative-ai_188544-8052.jpg",
-    price: "500.000",
-    colors:["#be123c","#15803d","#0369a1"],
-    category:{
-      name: "cars",
-      imageURL: "https://img.freepik.com/free-photo/sports-car-driving-asphalt-road-night-generative-ai_188544-8052.jpg"
-    }
-  },
-  {
-    id: 6,
-    title: "cccccccccc cccccccccc",
-    description: "ccccccccc ccccccc ccccc ccccc cccc cccccccc  ccccccccc ccccccccc ccccc ccccc",
-    imageURL:"https://edgecast-img.yahoo.net/mysterio/api/AAF2337E5A659931DE25CBFE268CE27FFE187DE39FC7548C2445BB6F27B5F73E/autoblog/resizefill_w660_h372;quality_80;format_webp;cc_31536000;/https://s.aolcdn.com/os/ab/_cms/2023/02/06044004/lamborgnini_invencible_002.jpg",
-    price: "500.000",
-    colors:["#be123c","#15803d","#0369a1"],
-    category:{
-      name: "cars",
-      imageURL: "https://edgecast-img.yahoo.net/mysterio/api/AAF2337E5A659931DE25CBFE268CE27FFE187DE39FC7548C2445BB6F27B5F73E/autoblog/resizefill_w660_h372;quality_80;format_webp;cc_31536000;/https://s.aolcdn.com/os/ab/_cms/2023/02/06044004/lamborgnini_invencible_002.jpg"
-    }
-  },
-  {
-    id: 7,
-    title: "aaaaaaaaaaaaaaa",
-    description: "aaaaaaaaaaaa aaaaaaaaaaa aaaaaaaaaaaaaaa aaaaaaa aaaaaaaaaaa aaaaaa  aaaaaaaaa aaaaa aaaa aaaaaaaaa",
-    imageURL:"https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNhcnN8ZW58MHx8MHx8fDA%3D",
-    price: "500.000",
-    colors:["#be123c","#15803d","#0369a1"],
-    category:{
-      name: "cars",
-      imageURL: "https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNhcnN8ZW58MHx8MHx8fDA%3D"
-    }
-  },
-  {
-    id: 8,
-    title: "bbbbbbbbbbbb",
-    description: "bbbbb bbbbb bbbbbbbbbbbb bbb bbbb bbb  bbb bb bbbb bbbbbbbbbb",
-    imageURL:"https://img.freepik.com/free-photo/sports-car-driving-asphalt-road-night-generative-ai_188544-8052.jpg",
-    price: "500.000",
-    colors:["#be123c","#15803d","#0369a1"],
-    category:{
-      name: "cars",
-      imageURL: "https://img.freepik.com/free-photo/sports-car-driving-asphalt-road-night-generative-ai_188544-8052.jpg"
-    }
-  },
-  {
-    id: 9,
-    title: "cccccccccc cccccccccc",
-    description: "ccccccccc ccccccc ccccc ccccc cccc cccccccc  ccccccccc ccccccccc ccccc ccccc",
-    imageURL:"https://edgecast-img.yahoo.net/mysterio/api/AAF2337E5A659931DE25CBFE268CE27FFE187DE39FC7548C2445BB6F27B5F73E/autoblog/resizefill_w660_h372;quality_80;format_webp;cc_31536000;/https://s.aolcdn.com/os/ab/_cms/2023/02/06044004/lamborgnini_invencible_002.jpg",
-    price: "500.000",
-    colors:["#be123c","#15803d","#0369a1"],
-    category:{
-      name: "cars",
-      imageURL: "https://edgecast-img.yahoo.net/mysterio/api/AAF2337E5A659931DE25CBFE268CE27FFE187DE39FC7548C2445BB6F27B5F73E/autoblog/resizefill_w660_h372;quality_80;format_webp;cc_31536000;/https://s.aolcdn.com/os/ab/_cms/2023/02/06044004/lamborgnini_invencible_002.jpg"
-    }
-  },
+  }
 ]
 
 
@@ -139,4 +68,38 @@ export const formInputsList:IFormInput[] = [
     label: 'product price',
     type: 'text'
   },
+]
+
+export const colors:string[] = [
+  "#a855f7",
+  "#2563eb",
+  "#84d2c5",
+  "#13005A",
+  "#A31ACB",
+  "#FF6E31",
+  "#3C2A21",
+  "#6C4AB6",
+  "#000000",
+  "#645CB8",
+  "#1FBA70",
+  "#820000",
+  "#FF0032"
+]
+
+export const categories:ICategory[] = [
+  {
+    id:uId(),
+    name: "mercedes",
+    imageURL: "https://a.allegroimg.com/s512/11fe7f/14071f1e46ce83c20aa1868310d6/Naklejka-na-samochod-auto-szybe-lakier-tuning-mercedes-benz-logo-15cm" 
+  },
+  {
+    id:uId(),
+    name: "BMW",
+    imageURL: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/BMW.svg/1200px-BMW.svg.png" 
+  },
+  {
+    id:uId(),
+    name: "volkswagen",
+    imageURL: "https://upload.wikimedia.org/wikipedia/commons/6/6d/Volkswagen_logo_2019.svg" 
+  }
 ]
